@@ -77,7 +77,7 @@ const NumberGrid: React.FC<NumberGridProps> = ({
   };
   
   return (
-    <div className="grid grid-cols-5 gap-2 md:gap-3">
+    <div className="grid grid-cols-10 gap-2 md:gap-3">
       {numbers.map((number) => {
         const status = getNumberStatus(number);
         const isSelected = status === 'selected' || status === 'reserved' || status === 'sold';
@@ -146,6 +146,6 @@ const NumberGrid: React.FC<NumberGridProps> = ({
       })}
     </div>
   );
-};
+}
 
 export default NumberGrid;
